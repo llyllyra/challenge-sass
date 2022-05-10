@@ -1,0 +1,129 @@
+@import "_variable.scss";
+
+$p-16: 20px;
+
+body
+{
+    font: 100% "Space Mono", monospace;
+    color: $grey;
+    margin: 0;
+    padding: $p-16;
+    background-color: $blanc;
+    overflow-x: hidden;
+}
+
+main
+{
+    padding: 0 $p-16;
+}
+
+article
+{
+    display: flex;
+    flex-wrap: wrap;
+
+    section
+    {
+        flex-grow: 1;
+        flex-basis: 45%;
+        border: 1px #8C8C8C solid;
+
+        -webkit-box-shadow: 10px 10px 15px -4px #6b717f;
+        -moz-box-shadow: 10px 10px 15px -4px #6b717f;
+        box-shadow: 10px 10px 15px -4px #6b717f;
+        padding: $p-16;
+        margin: 16px;
+        clear: both;
+        overflow: auto;
+        box-sizing: border-box;
+
+        &#selling-points
+        {
+            flex-grow: 2;
+            flex-basis: 100%;
+        }
+    }
+
+    code
+    {
+        background: $noir;
+        border: 1px solid $grey;
+        color: $grey2;
+        page-break-inside: avoid;
+        font-family: monospace;
+        font-size: 15px;
+        line-height: 1.6;
+        margin-bottom: 1.6em;
+        max-width: 100%;
+        overflow: auto;
+        padding: $p-16;
+        display: block;
+        word-wrap: break-word;
+
+        &.before
+        {
+            float: left;
+            width: 40%;
+        }
+
+        &.after
+        {
+            float: right;
+            width: 40%;
+        }
+    }
+}
+
+%textColor
+{
+    color: $rose;
+}
+
+h1
+{
+    @extend %textColor;
+   text-align: center; 
+}
+
+h3 {
+    @extend %textColor;
+    text-align: center;
+    font-size: 1.5em;
+    padding: $p-16*2;
+    margin-bottom: 0px;
+}
+
+h2{
+    @extend%textColor
+}
+
+.messages {
+    padding: $p-16;
+}
+
+%border {
+    border: 1px solid $grey2;
+    padding: $p-16;
+    color: $blanc;
+}
+
+.success {
+    @extend %border;
+    background-color: $vert;
+}
+
+.error {
+    @extend %border;
+    background-color: $red;
+
+    &:hover
+    {
+        background-color: $vert;
+    }
+}
+
+.warning {
+    @extend %border;
+    background-color: $orange;
+}
+
