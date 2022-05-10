@@ -15,7 +15,6 @@ article {
   display: flex;
   flex-wrap: wrap;
 }
-
 article section {
   flex-grow: 1;
   flex-basis: 45%;
@@ -29,12 +28,10 @@ article section {
   overflow: auto;
   box-sizing: border-box;
 }
-
 article section#selling-points {
   flex-grow: 2;
   flex-basis: 100%;
 }
-
 article code {
   background: #000;
   border: 1px solid #6b717f;
@@ -50,12 +47,10 @@ article code {
   display: block;
   word-wrap: break-word;
 }
-
 article code.before {
   float: left;
   width: 40%;
 }
-
 article code.after {
   float: right;
   width: 40%;
@@ -93,7 +88,6 @@ h3 {
 .error {
   background-color: #ff0000;
 }
-
 .error:hover {
   background-color: #008000;
 }
@@ -101,7 +95,5 @@ h3 {
 .warning {
   background-color: #ffa500;
 }
-
-/*# sourceMappingURL=style.css.map */
 
 /*# sourceMappingURL=style.css.map */
