@@ -43,31 +43,31 @@ article section#selling-points {
 }
 article section .advantages li:nth-child(0) {
   background: blueviolet;
-  color: #2ba8e2;
+  color: #6b717f;
 }
 article section .advantages li:nth-child(1) {
   background: #9b4ae6;
-  color: #1c95cd;
+  color: #5b606c;
 }
 article section .advantages li:nth-child(2) {
   background: #ad6aeb;
-  color: #187eae;
+  color: #4a4f58;
 }
 article section .advantages li:nth-child(3) {
   background: #be89ef;
-  color: #13678e;
+  color: #3a3d45;
 }
 article section .advantages li:nth-child(4) {
   background: #cfa9f3;
-  color: #0f516f;
+  color: #2a2c31;
 }
 article section .advantages li:nth-child(5) {
   background: #e1c8f7;
-  color: #0b3a50;
+  color: #191b1e;
 }
 article section .advantages li:nth-child(6) {
   background: #f2e7fc;
-  color: #072330;
+  color: #090a0b;
 }
 article code {
   background: #000;
