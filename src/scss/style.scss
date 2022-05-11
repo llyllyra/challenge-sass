@@ -1,4 +1,4 @@
-@import "_variable.scss";
+@import "_setting.scss";
 
 $p-16: 16px;
 
@@ -21,16 +21,8 @@ article
 {
     display: flex;
     flex-wrap: wrap;
-
-    @mixin shadow-box($color) {
-        -webkit-box-shadow: 10px 10px 15px -4px $color;
-        -moz-box-shadow: 10px 10px 15px -4px $color;
-        box-shadow: 10px 10px 15px -4px $color;
-    }
     section
     {
-
-
         flex-grow: 1;
         flex-basis: 45%;
         border: 1px #8C8C8C solid;
@@ -46,6 +38,15 @@ article
             flex-grow: 2;
             flex-basis: 100%;
         }
+
+        .advantages {
+            @for $i from 0 to 7 {
+              & li:nth-child(#{$i}) {
+                background: lighten($gradient1, $i * 7%);
+                color: darken($gradient2, $i * 7%);
+              }
+            }
+          }
     }
 
     code

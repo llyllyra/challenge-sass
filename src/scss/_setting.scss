@@ -1,0 +1,17 @@
+$grey : #6b717f;
+$grey2: #8C8C8C;
+$blanc: #fff;
+$noir: #000;
+$rose: #BF4080;
+$vert: #008000;
+$red: #ff0000;
+$orange: #ffa500;
+
+$gradient1: #8a2be2;
+$gradient2: #2ba8e2;
+
+@mixin shadow-box($color) {
+    -webkit-box-shadow: 10px 10px 15px -4px $color;
+    -moz-box-shadow: 10px 10px 15px -4px $color;
+    box-shadow: 10px 10px 15px -4px $color;
+}

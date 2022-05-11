@@ -41,6 +41,34 @@ article section#selling-points {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
 }
+article section .advantages li:nth-child(0) {
+  background: blueviolet;
+  color: #2ba8e2;
+}
+article section .advantages li:nth-child(1) {
+  background: #9b4ae6;
+  color: #1c95cd;
+}
+article section .advantages li:nth-child(2) {
+  background: #ad6aeb;
+  color: #187eae;
+}
+article section .advantages li:nth-child(3) {
+  background: #be89ef;
+  color: #13678e;
+}
+article section .advantages li:nth-child(4) {
+  background: #cfa9f3;
+  color: #0f516f;
+}
+article section .advantages li:nth-child(5) {
+  background: #e1c8f7;
+  color: #0b3a50;
+}
+article section .advantages li:nth-child(6) {
+  background: #f2e7fc;
+  color: #072330;
+}
 article code {
   background: #000;
   border: 1px solid #6b717f;
