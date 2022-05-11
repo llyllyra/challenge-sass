@@ -22,14 +22,19 @@ article
     display: flex;
     flex-wrap: wrap;
 
+    @mixin shadow-box($color) {
+        -webkit-box-shadow: 10px 10px 15px -4px $color;
+        -moz-box-shadow: 10px 10px 15px -4px $color;
+        box-shadow: 10px 10px 15px -4px $color;
+    }
     section
     {
+
+
         flex-grow: 1;
         flex-basis: 45%;
         border: 1px #8C8C8C solid;
-        -webkit-box-shadow: 10px 10px 15px -4px #6b717f;
-        -moz-box-shadow: 10px 10px 15px -4px #6b717f;
-        box-shadow: 10px 10px 15px -4px #6b717f;
+        @include shadow-box($grey);
         padding: $p-16;
         margin: 16px;
         clear: both;
